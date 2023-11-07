@@ -1,0 +1,179 @@
+TEAM-CLIFF HANGER/GAME-MOVIE QUIZ/D4B
+ROLL NO'S=33,15,35
+MOVIE QUIZ
+#include <stdio.h>
+#include<string.h>
+int main() {
+  printf("\t\t\t\t\tMOVIE QUIZ\n");
+  // Declare an array of questions and answers.
+  char questions[300][300] = {
+      {"Q1.What is the name of Sholay's iconic villain ?\nA. Kalia\nB. Shakaal\nC. Gabbar Singh\nD. Bulla"},
+      {"Q2.Who directed Dil Chahta Hai ?\nA. Zoya Akhtar\nB. Aamir Khan\nC. Farhan Akhtar\nD. Reema Kagti"},
+      {"Q3.Which cities does Rani visit when she goes on her solo honeymoon in Queen ?\nA. Paris and London\nB. London and New York\nC. Paris and Amsterdam\nD. Tokyo and Shanghai"},
+      {"Q4.In Om Shanti Om, what does Deepika Padukone's character Shantipriya do ?\nA. Singer\nB. Actress\nC. Journalist\nD. Lawyer"},
+      {"Q5.What is the name of the lead female character in Dilwale Dulhania Le Jayenge ?\nA. Senorita\nB. Simran\nC. Sunita\nD. Pooja"},
+      {"Q6.Which movie is this groundbreaking line from:Teja main hoon, Mark idhar hai ?\nA. Hera Pheri\nB. Welcome\nC. Maine Pyar Kiya\nD. Andaz Apna Apna"},
+      {"Q7.In Karthik Calling Karthik, who was actually calling Karthik ?\nA. Shonali\nB. Dr. Kapadia\nC. Kamath\nD. Karthik"},
+      {"Q8.Finish the quote from Deewar: Mere paas _ ?\nA. Baap Hai\nB. Paisa Hai\nC. Maa Hai\nD. Naya iPhone Hai"},
+      {"Q9.In 3 Idiots, what is Rancho's real name ?\nA. Ranchhoddas Shamaldas Chanchad\nB. Chatur Ramalingam\nC. Phunsukh Wangdu\nD. Viru Sahastrabuddhe"},
+      {"Q10.In Chak De! India, how many minutes, according to coach Kabir Khan, does the team have ?\nA. 70\nB. 69\nC. 30\nD. 50"},
+      {"Q11.In Jab We Met, what is the name of Geet's first love ?\nA. Anshuman\nB. Aayushman\nC. Armaan\nD. Aakash"},
+      {"Q12.Which was India's First Sound movie ?\nA. Alam Ara\nB. Raja Harishchandra\nC. Sholey\nD. Dosti"},
+      {"Q13.What was the Name of the Manoj Bajpai in Gangs Of Wasseypur ?\nA. Iqbal khan\nB. Chote khan\nC. Faizal Kan\nD. Sardar khan"},
+      {"Q14.In which of the following film Actress Alia Bhatt played a role of Indian Spy ?\nA. Romeo Akbar Walter\nB. Gully Boy\nC. Shaandar\nD. Raazi"},
+      {"Q15.What was the profession of Varun Dhawan in movie “Sui -Dhaaga” ?\nA. Cyclist\nB. Tailor\nC. Barber\nD. Driver"},
+      {"Q16.In film “zindagi na milengi dobara” , where did Three Friends Meet ?\nA. America\nB. Mumbai\nC. Spain\nD. Italy"},
+      {"Q17.Who was the lead Actor in Film “Chhichhore” ?\nA. Varun Dhawan\nB. Sushant Singh Rajput\nC. Rahir Bhasin\nD. Varun Sharma"},
+      {"Q18.Which Film is based on death of Earlier Prime Minister “Lal Bahadur Shastri” ?\nA. The Tashkent File\nB. Article 15\nC. The Accidental Prime Minister\nD. URI"},
+      {"Q19.What was the name of Kajol's character in the film “DDLJ” ?\nA. Shilpa\nB. Simran\nC. Anjali\nD. Tina"},
+      {"Q20.Gold toh Gold Hota Hai …..Chhora Lave ya Chhori is the famous dialogue of movie _ ?\nA. Lagaan\nB. Dangal\nC. 3 idiot\nD. Bhaag Milkha Bhaag"},
+      {"Q21.In which of the following film actor Ajay Devgan has played the role of Ghost ?\nA. Action Jackson\nB. Golmaal\nC. Kaal\nD. Bol Bachchan"},
+      {"Q22.What was the name of Paresh Raval in movie “Hera Pheri” ?\nA. Baburao Ganpatrao Aapte\nB. Munna\nC. Shyam rao\nD. Kachra seth"},
+      {"Q23.What was the Release date of Movie “Hum Aapke Hain Koun” ?\nA. 5 August 1994\nB. 5 August 1997\nC. 15 August 1997\nD. 26 January 1994"},
+      {"Q24.Where does Veeru proposed to bansanti in Sholay movie ?\nA. From top of water tank.\nB. In garden\nC. In hill station\nD. In railway statio"},
+      {"Q25.Actress Preity Zinta made her debut in __ movie ?\nA. Dil Se\nB. Koi mil gaya\nC. Krish\nD. Dosti"},
+      {"Q26.Who was the director of 3 idiot movie ?\nA. Sanjay Leela Bhansali\nB. Prakash Jha\nC. Rajkumar Hirani\nD. Aamir Khan"},
+      {"Q27.What was the nick name of the kartik aryan in Pyaar ka punchnama 2 ?\nA. Gogo\nB. Liquid\nC. Thakur\nD. Sonu"},
+      {"Q28.In which following film SRK's house Mannat has shown in a scene ?\nA. Om Shanti Om\nB. Zero\nC. Fan\nD. Don 2"},
+      {"Q29.Who played the role of the Amitabh Bachchan adopted son in Baghban ?\nA. Paresh rawal\nB. Salman khan\nC. Amir khan\nD. Aman verma"},
+      {"Q30.In which film priyanka chopra played a role of Indian Boxer ?\nA. Don 2\nB. Fashion\nC. Mary Kom\nD. Krish"}
+      
+  };
+  char answers[200][200] = {
+   {"C"},
+   {"C"},
+   {"C"},
+   {"B"},
+   {"B"},
+   {"D"},
+   {"D"},
+   {"C"},
+   {"C"},
+   {"A"},
+   {"A"},
+   {"A"},
+   {"D"},
+   {"D"},
+   {"B"},
+   {"C"},
+   {"B"},
+   {"A"},
+   {"C"},
+   {"B"},
+   {"C"},
+   {"A"},
+   {"A"},
+   {"A"},
+   {"A"},
+   {"C"},
+   {"A"},
+   {"C"},
+   {"B"},
+   {"C"},
+  };
+
+  // Initialize the score.
+  int score = 0;
+  int a;
+  
+    printf("Enter your roll number\n");
+    scanf("%d",&a);
+
+ if(a<11){
+  // Ask the user each question and get their answer.
+  for (int i = 0; i < 5; i++) {
+    printf("%s: \n", questions[i]);
+    char answer[100];
+    printf("Enter right option (IN CAPITAL)\n");
+    scanf("%s",answer);
+
+    // Check if the answer is correct.
+    if (strcmp(answer, answers[i]) == 0) {
+      score++;
+    }
+  }}
+
+  
+  if(a>11&&a<21){
+  // Ask the user each question and get their answer.
+  for (int j = 5; j <10; j++) {
+    printf("%s: \n", questions[j]);
+    char answer[100];
+    printf("Enter right option (IN CAPITAL)\n");
+    scanf("%s",answer);
+
+    // Check if the answer is correct.
+    if (strcmp(answer, answers[j]) == 0) {
+      score++;
+    }
+    }
+  }
+
+  
+ if(a>21&&a<31){
+  // Ask the user each question and get their answer.
+  for (int k = 10; k <15; k++) {
+    printf("%s: \n", questions[k]);
+    char answer[100];
+   printf("Enter right option (IN CAPITAL)\n");
+    scanf("%s",answer);
+    // Check if the answer is correct.
+    if (strcmp(answer, answers[k]) == 0) {
+      score++;
+    }
+    }
+  }
+
+  
+  if(a>31&&a<41){
+  // Ask the user each question and get their answer.
+  for (int l = 15; l < 20; l++) {
+    printf("%s: \n", questions[l]);
+    char answer[100];
+   printf("Enter right option (IN CAPITAL)\n");
+    scanf("%s",answer);
+
+    // Check if the answer is correct.
+    if (strcmp(answer, answers[l]) == 0) {
+      score++;
+    }
+    }
+  }
+
+  
+if(a>41&&a<51){
+  // Ask the user each question and get their answer.
+  for (int m = 20; m <25; m++) {
+    printf("%s: \n", questions[m]);
+    char answer[100];
+   printf("Enter right option (IN CAPITAL)\n");
+    scanf("%s",answer);
+
+    // Check if the answer is correct.
+    if (strcmp(answer, answers[m]) == 0) {
+      score++;
+    }
+    }
+  }
+
+
+if(a>51&&a<63){
+  // Ask the user each question and get their answer.
+  for (int n = 25; n < 30; n++) {
+    printf("%s: \n", questions[n]);
+    char answer[100];
+    printf("Enter right option (IN CAPITAL)\n");
+    scanf("%s",answer);
+    fgets(answer, sizeof(answer), stdin);
+
+    // Check if the answer is correct.
+    if (strcmp(answer, answers[n]) == 0) {
+      score++;
+    }
+    }
+  }
+
+  // Print the user's score.
+  printf("Your score is %d out of 5.\n", score);
+
+  return 0;
